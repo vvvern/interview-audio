@@ -1,0 +1,79 @@
+/* Setup styles in the other file. */
+
+@font-face {
+    font-family: MaisonNeue-Mono;
+    src: url(https://files.cargocollective.com/c1381777/MaisonNeue-Mono.otf);
+}
+@font-face {
+    font-family: MaisonNeue-Book;
+    src: url(https://files.cargocollective.com/c791355/MaisonNeue-Book.otf);
+}
+
+
+
+.collapsible {
+  background-color: white;
+  color:  balck;
+  cursor: pointer;
+  padding: 6px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding:0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: gray;
+}
+
+
+.clock {
+  display: flex;
+  padding-left: 9%;
+  padding-bottom: 9%;
+
+}
+
+.head-tab {
+  border-radius: 5px;
+  border: none;
+  padding: 7px;
+  background-color: white;
+  text-align: center;
+  font: 18px, sans-serif;
+}
+
+.audio-tab {
+  border-radius: 5px;
+  border: none;
+  padding: 7px;
+  background-color: white;
+
+}
+
+.audio-tab-xl {
+  border-radius: 5px;
+  border: none;
+  padding: 7px;
+  padding-bottom: 32px;
+  background-color: white;
+
+}
