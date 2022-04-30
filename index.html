@@ -7,15 +7,32 @@
 		<link href="setup.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 
-		<style>
-		body {
-		  background-image: linear-gradient(to bottom, #001AFF, black);
-}
-		</style>
+
+
+		<style type="text/css">
+	 .mobileShow {display: none;}
+
+	 /* Smartphone Portrait and Landscape */
+	 @media only screen
+	 	and (min-device-width : 320px)
+	 	and (max-device-width : 480px){
+	 		.mobileShow {display: inline;}
+	 }
+	 </style>
+
+	 <style type="text/css">
+  .mobileHide { display: inline; }
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){
+     .mobileHide { display: none;}
+  }
+</style>
 
   <section class="copy"> <div>
   <a href="intro.html" class="head-tab"> Conversation with Matt ​👨‍💻​👩‍💻​🚫​🏢​ </a>
-
 
 
   </div>
@@ -25,8 +42,15 @@
 
 
 
-	<iframe class="clock" src="https://free.timeanddate.com/clock/i8b008x5/n179/fs32/fcfff/tct/pct/tt0/tw0/th1/tb4" frameborder="0" width="292" height="76" allowtransparency="true"></iframe>
+
 	<body>
+
+		<div class="mobileHide"> <p> Audio content is to be experienced on mobile devices only.<p>  <h2>(Note : Right click > Inspect > Choose any mobile device dimension.)</h2> </div>
+
+	<div class="mobileShow">
+
+		<iframe class="clock" src="https://free.timeanddate.com/clock/i8b008x5/n179/fs32/fcfff/tct/pct/tt0/tw0/th1/tb4" frameborder="0" width="292" height="76" allowtransparency="true"></iframe>
+
 
   <section class="audio-tab">
   <button class="collapsible">Q1 — How do you feel about working from home?</button>
@@ -100,6 +124,8 @@
   Your browser does not support the audio element.
   </audio>
   </section>
+
+	 </div>
 
 
 
